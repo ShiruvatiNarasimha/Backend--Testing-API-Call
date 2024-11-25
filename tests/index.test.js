@@ -5,6 +5,7 @@ function sum(a, b) {
 }
 
 const BACKEND_URL = "http://localhost:3000";
+const WS_URL = "ws://localhost:3001";
 
 describe("Authentication", () => {
   test("User is Able to sign up only once", async () => {
