@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-const userRouter = Router();
+export const userRouter = Router();
 
 userRouter.post("/metadata", (req, res) => {});
 
