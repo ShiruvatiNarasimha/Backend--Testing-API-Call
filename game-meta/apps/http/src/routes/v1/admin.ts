@@ -2,10 +2,10 @@ import { Router } from "express";
 
 export const adminRouter = Router();
 
-adminRouter.get(":speceId", (req, res) => {});
+adminRouter.post("/element", (req, res) => {});
 
-adminRouter.get(":spaceId", (req, res) => {});
+adminRouter.put("/element/:elementId", (req, res) => {});
 
-adminRouter.get(":spaceId", (req, res) => {});
+adminRouter.get("/avatar", (req, res) => {});
 
-adminRouter.get(":spaceId", (req, res) => {});
+adminRouter.get("/map", (req, res) => {});
