@@ -34,6 +34,9 @@ model Space {
 
 }
 
+
+
+
 model spaceElements {
   id        String @id @unique @default(cuid())
   elementId String
@@ -50,6 +53,7 @@ model Element {
   height   Int
   imageUrl String
   space spaceElements[]
+  mapElements mapElements[]
 }
 
 model Map {
@@ -65,6 +69,9 @@ model mapElements {
   elementId String?
   x         Int?
   y         Int?
+
+  map       Map @relation(fields: [mapId], references: [id])
+  element   Element @relation(fields: [elementId], references: [id])
 }
 
 model Avatar {
