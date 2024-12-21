@@ -54,6 +54,7 @@ model Element {
   imageUrl String
   space spaceElements[]
   mapElements mapElements[]
+  
 }
 
 model Map {
@@ -84,3 +85,15 @@ enum Role {
   Admin
   User
 }
+
+
+
+
+
+
+
+// Footer.tsx
+
+
+
+
